@@ -1,10 +1,19 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-    base: '/all-in-7-days/', // Nombre de tu repositorio
+    base: '/',  // Cambiado de '/all-in-7-days/' a '/'
     build: {
         outDir: 'dist',
         assetsDir: 'assets',
-        sourcemap: true
+        sourcemap: true,
+        rollupOptions: {
+            output: {
+                manualChunks: undefined
+            }
+        }
+    },
+    server: {
+        port: 3000,
+        host: true
     }
 });
