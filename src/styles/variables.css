@@ -1,0 +1,32 @@
+:root {
+    --russian-violet: #231942;
+    --ultra-violet: #5E548E;
+    --african-violet: #9F86C0;
+    --lilac: #BE95C4;
+    --pink-lavender: #E0B1CB;
+
+    /* Espaciado */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+
+    /* Contenedores */
+    --container-width: 1200px;
+    --container-padding: 1rem;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: var(--russian-violet);
+    color: var(--pink-lavender);
+    line-height: 1.6;
+}

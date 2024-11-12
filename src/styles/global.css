@@ -1,0 +1,52 @@
+/* Variables globales y reset */
+:root {
+  --russian-violet: #231942;
+  --ultra-violet: #5E548E;
+  --african-violet: #9F86C0;
+  --lilac: #BE95C4;
+  --pink-lavender: #E0B1CB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--russian-violet);
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Contenedor global */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Secciones */
+.content-section {
+  padding: 6rem 2rem;
+  background-color: var(--russian-violet);
+  position: relative;
+  z-index: 1;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--pink-lavender);
+  margin-bottom: 3rem;
+}
+
+/* Footer global */
+.footer {
+  background: rgba(94, 84, 142, 0.2);
+  padding: 4rem 2rem 2rem;
+  backdrop-filter: blur(8px);
+  position: relative;
+  z-index: 1;
+}

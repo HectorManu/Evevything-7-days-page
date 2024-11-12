@@ -1,0 +1,90 @@
+.nav-container {
+    position: fixed;
+    width: 100%;
+    top: 2rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.nav-content {
+    background: rgba(94, 84, 142, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: min(90%, 600px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-logo {
+    color: var(--pink-lavender);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: var(--pink-lavender);
+    transform: translateY(-1px);
+}
+
+/* Nuevo estilo para cuando el fondo es blanco */
+.white-bg .nav-link {
+    color: #333333;
+}
+
+.white-bg .nav-link:hover {
+    color: var(--pink-lavender);
+}
+
+/* Nuevo estilo para cuando el nav está sobre un componente DayCard */
+.dark-text .nav-link {
+    color: #222222;
+}
+
+.dark-text .nav-link:hover {
+    color: var(--pink-lavender);
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        top: 1rem;
+    }
+
+    .nav-content {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .nav-content {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+}
