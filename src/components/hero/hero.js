@@ -93,7 +93,7 @@ export class Hero extends HTMLElement {
         <div class="hero-content">
           <div class="hero-box">
             <h1>Data Engineering</h1>
-            <p>All in 7 Days</p>
+            <p>Everything in 7 days</p>
             <div class="buttons">
               <a href="https://github.com/tuusuario/data-engineering-7days" 
                  class="btn btn-primary" 
